@@ -1,0 +1,19 @@
+Summary,Issue Type,Priority,Labels,Description
+Authentication,Epic,High,Must,Role-based login for students faculty and admin
+Course Catalog,Epic,High,Must,Search and view course information
+Registration,Epic,High,Must,Register drop and waitlist
+Validation Rules,Epic,High,Must,Seat clash prerequisite and credit limit checks
+Faculty and Admin,Epic,Medium,Should,Class lists and course management
+Notifications and Reports,Epic,Medium,Should,Notifications and enrolment reports
+US-01 Role-based login,Story,High,Must,"As a user I want to log in with my role so that I only see features meant for me. AC: valid credentials land on role home page; invalid credentials show error and no access."
+US-02 Search and filter courses,Story,High,Must,"As a student I want to search and filter courses so that I can find the ones I need quickly. AC: search by code or name lists matches; department filter limits results."
+US-03 View course details,Story,High,Must,"As a student I want to see course details so that I can decide before registering. AC: credits schedule faculty seats left and prerequisites are shown."
+US-04 Register for a course,Story,High,Must,"As a student I want to register for a course so that it is added to my timetable. AC: open window and valid checks confirm registration; closed window shows registration closed."
+US-05 Join waitlist,Story,Medium,Should,"As a student I want to join a waitlist when a course is full. AC: full course offers waitlist; freed seat registers first waitlisted student and notifies them."
+US-06 Timetable clash check,Story,High,Must,"As a student I want clashes flagged so that I do not register for overlapping classes. AC: overlapping course is blocked and the clashing course is named."
+US-07 Prerequisite and credit limit check,Story,High,Must,"As a student I want prerequisites and credit limits checked. AC: missing prerequisite blocks and names the course; exceeding credit limit blocks and shows the limit."
+US-08 Drop a course,Story,High,Must,"As a student I want to drop a course so that I can fix a mistake. AC: open drop window releases the seat and confirms; closed window blocks the drop."
+US-09 Faculty class list,Story,Medium,Should,"As a faculty member I want to see my class list. AC: only currently enrolled students are shown."
+US-10 Admin course management,Story,High,Must,"As an admin I want to manage courses. AC: created or edited course appears in the catalog; closed course rejects registrations."
+US-11 Notifications,Story,Medium,Should,"As a student I want notifications. AC: register drop and waitlist promotion each trigger a notification."
+US-12 Enrolment reports,Story,Low,Could,"As an admin I want enrolment reports. AC: export shows enrolled and waitlisted counts for the chosen course or department."

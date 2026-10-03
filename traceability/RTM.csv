@@ -1,0 +1,13 @@
+Requirement,Business Objective,User Story,UAT Test Case,Priority
+FR-01,BO-3,US-01,TC-01,Must
+FR-02,BO-1,US-02,TC-02,Must
+FR-03,BO-1,US-03,TC-03,Must
+FR-04,BO-1,US-04,TC-04,Must
+FR-05,BO-2,US-05,TC-05,Should
+FR-06,BO-2,US-06,TC-06,Must
+FR-07,BO-2,US-07,TC-07,Must
+FR-08,BO-1,US-08,TC-08,Must
+FR-09,BO-3,US-09,TC-09,Should
+FR-10,"BO-3, BO-4",US-10,TC-10,Must
+FR-11,BO-4,US-11,TC-11,Should
+FR-12,"BO-3, BO-5",US-12,TC-12,Could
