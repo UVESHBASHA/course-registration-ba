@@ -1,45 +1,28 @@
 # 4. Process Flows
 
-Diagrams are written in Mermaid and render automatically on GitHub.
-
 ## 4.1 As-Is (manual process)
-```mermaid
-flowchart TD
-    A([Start]) --> B[Student collects paper registration form]
-    B --> C[Student checks timetable and prerequisites by hand]
-    C --> D[Faculty advisor signs the form]
-    D --> E[Admin office enters data into a spreadsheet]
-    E --> F{Seat available and no clash?}
-    F -- No --> G[Admin contacts student by phone or email]
-    G --> H[Student corrects the form]
-    H --> D
-    F -- Yes --> I[Admin sends class list to faculty by email]
-    I --> J([End])
-```
+
+![As-Is manual course registration process](images/as_is_flow.png)
+
+**Steps:**
+1. Student collects a paper registration form.
+2. Student checks the timetable and prerequisites by hand.
+3. Faculty advisor signs the form.
+4. Admin office enters the data into a spreadsheet.
+5. If a seat is unavailable or there is a clash, admin contacts the student by phone or email, the student corrects the form, and it goes back for signature.
+6. If everything is fine, admin sends the class list to faculty by email.
 
 ## 4.2 To-Be (proposed system)
-```mermaid
-flowchart TD
-    A([Start]) --> B[Student logs in]
-    B --> C[Search course catalog]
-    C --> D[Select course and click Register]
-    D --> E{Registration window open?}
-    E -- No --> X1[Show registration closed message]
-    E -- Yes --> F{Seat available?}
-    F -- No --> W[Offer waitlist]
-    W --> N
-    F -- Yes --> G{Timetable clash?}
-    G -- Yes --> X2[Block and name the clashing course]
-    G -- No --> H{Prerequisites met and credit limit OK?}
-    H -- No --> X3[Block and show the reason]
-    H -- Yes --> I[Confirm registration and update seat count]
-    I --> N[Send notification to student]
-    N --> J[Faculty and admin see updated lists and reports]
-    X1 --> K([End])
-    X2 --> K
-    X3 --> K
-    J --> K
-```
+
+![To-Be online course registration process](images/to_be_flow.png)
+
+**Steps:**
+1. Student logs in and searches the course catalog.
+2. Student selects a course and clicks Register.
+3. The system checks, in order: registration window, seat availability, timetable clash, prerequisites and credit limit.
+4. If a check fails, the system blocks the registration and shows the reason. If the course is full, the student is offered the waitlist.
+5. If all checks pass, the system confirms the registration and updates the seat count.
+6. The student is notified, and faculty and admin see updated lists and reports in real time.
 
 ## 4.3 Key differences
 | Step | As-is | To-be |
