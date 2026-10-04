@@ -35,4 +35,4 @@ Course registration relies on paper forms, spreadsheets, and email. Students can
 6. Define UAT test cases for business users to verify the solution.
 
 ## Tools
-Markdown and Mermaid (GitHub-rendered diagrams), Excel/CSV for matrices, Jira for the backlog.
+Markdown, Graphviz diagrams, Excel/CSV for matrices, Jira for the backlog.

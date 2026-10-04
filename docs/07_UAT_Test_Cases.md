@@ -18,3 +18,26 @@ Status is filled in during a walkthrough of the wireframes ([08_Wireframes.md](0
 | TC-10 | FR-10 | Admin manages a course | 1. Log in as admin. 2. Create a course. 3. Edit its seat limit. 4. Close it. | Changes appear in the catalog; closed course rejects registration. |
 | TC-11 | FR-11 | Notification | 1. Register for a course. 2. Drop it. | A notification is received for each action. |
 | TC-12 | FR-12 | Enrolment report | 1. Log in as admin. 2. Choose a department. 3. Export the report. | Report shows enrolled and waitlisted counts. |
+
+## Findings
+
+UAT was performed as a walkthrough of the low-fidelity wireframes in 08_Wireframes.md on 04-Oct-2026. Result: 5 Pass, 4 Fail, 3 Not covered.
+
+| Test Case | Status | Gap found |
+|---|---|---|
+| TC-01 | Not covered | No login screen is drawn |
+| TC-07 | Fail | No message for exceeding the semester credit limit |
+| TC-08 | Fail | No drop confirmation message |
+| TC-09 | Not covered | No faculty class list screen |
+| TC-10 | Fail | No create/edit course form and no "course closed" message on the student side |
+| TC-11 | Not covered | No notification screen or message |
+| TC-12 | Fail | No enrolment report layout |
+
+### Recommended changes
+- Add a login wireframe with an error state for invalid credentials (TC-01).
+- Add a "Credit limit exceeded: you can register up to X credits" message to screen 8.2 (TC-07).
+- Add a "Course dropped successfully" confirmation to screen 8.3 (TC-08).
+- Add a faculty screen listing enrolled students for a course (TC-09).
+- Add create/edit course forms to the admin screen and a "Registration closed for this course" message on the student side (TC-10).
+- Add notification messages for both registration and drop actions (TC-11).
+- Add an enrolment report layout showing enrolled and waitlisted counts (TC-12).
